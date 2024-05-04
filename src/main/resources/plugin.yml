@@ -1,0 +1,8 @@
+name: Eitheria
+version: '${project.version}'
+main: fr.drakyx.Eitheria
+api-version: 1.8
+commands:
+  invsee:
+  reop:
+  mine:
