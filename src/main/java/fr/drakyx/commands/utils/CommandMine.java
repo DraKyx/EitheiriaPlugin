@@ -1,7 +1,7 @@
 package fr.drakyx.commands.utils;
 
 import fr.drakyx.Eitheria;
-import fr.drakyx.Mine;
+import fr.drakyx.utils.Mine;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;

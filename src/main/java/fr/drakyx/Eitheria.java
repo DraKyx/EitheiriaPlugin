@@ -2,10 +2,12 @@ package fr.drakyx;
 
 import fr.drakyx.commands.mod.CommandReop;
 import fr.drakyx.commands.utils.CommandMine;
+import fr.drakyx.commands.utils.CommandPos;
 import fr.drakyx.listeners.JoinServer;
 import fr.drakyx.listeners.PlayerCommand;
 import fr.drakyx.listeners.PlayerInteract;
 import fr.drakyx.commands.mod.CommandInvsee;
+import fr.drakyx.utils.Mine;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -20,11 +22,12 @@ public final class Eitheria extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        loadMines();
+
         /*
          * Config
          */
         saveDefaultConfig();
-        loadMines();
 
         /*
          * Listeners
@@ -40,6 +43,7 @@ public final class Eitheria extends JavaPlugin {
         getCommand("invsee").setExecutor(new CommandInvsee());
         getCommand("reop").setExecutor(new CommandReop(this));
         getCommand("mine").setExecutor(new CommandMine(this));
+        getCommand("pos").setExecutor(new CommandPos(this));
     }
 
     @Override

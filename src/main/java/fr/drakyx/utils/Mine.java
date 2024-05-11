@@ -1,4 +1,4 @@
-package fr.drakyx;
+package fr.drakyx.utils;
 
 public class Mine {
 
